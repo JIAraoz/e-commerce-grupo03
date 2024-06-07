@@ -37,7 +37,7 @@ const getAllReviews = async (req, res) => {
             include: [{
                 model: User,
                 as: 'user',
-                attributes: ['userId', 'userName', 'userEmail', 'userImage']
+                attributes: ['userId', 'userName', 'userEmail', 'userImage', "userRol"]
             }]
         });
 
